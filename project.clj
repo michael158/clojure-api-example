@@ -26,6 +26,8 @@
                  [org.webjars/webjars-locator "0.34"]
                  [ring-webjars "0.2.0"]
                  [ring/ring-core "1.6.3"]
+                 [mysql/mysql-connector-java "5.1.18"]
+                 [org.clojure/java.jdbc "0.7.8"]
                  [ring/ring-defaults "0.3.2"]
                  [selmer "1.12.0"]]
 
