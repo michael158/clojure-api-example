@@ -9,4 +9,9 @@
                       :password ""})
 
 (defn insert [table data]
-      (jdbc/insert! mysql-connection table data))
+      :return (jdbc/insert! mysql-connection table data))
+
+(defn find [table id]
+      (def query (str "SELECT * FROM " table " WHERE id = ?"))
+      (def dataReturn (jdbc/query mysql-connection [query id]))
+      :return dataReturn)
