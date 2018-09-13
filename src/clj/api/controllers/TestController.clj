@@ -15,5 +15,8 @@
 (defn create [data]
       (response (test/create data)))
 
+(defn delete [id]
+      (response (test/delete id)))
+
 (defn jsonReturnExample []
       (response {:from "Clojure" :message "This is a return json example"}))

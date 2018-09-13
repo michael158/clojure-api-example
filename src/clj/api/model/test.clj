@@ -7,3 +7,6 @@
 
 (defn find [id]
       :return (model/find table id))
+
+(defn delete [id]
+      :return (model/delete table id))
